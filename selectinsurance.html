@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Track expenses, transfer funds, pay bills—Check Money simplifies mobile banking, empowering you to manage finances effortlessly on-the-go.">
+    <meta name="keywords"
+        content="mobile banking, finance management, expense tracking, fund transfers, bill payments, financial empowerment, on-the-go banking, secure transactions, user-friendly interface">
+    <link rel="icon" href="images/mainn/favi.png">
+    <title> Click Money Mobile Banking</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .slider22 {
+            width: 100%;
+            height: 240px;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            /* margin-bottom: 10px;    */
+        }
+
+        .slides {
+            display: flex;
+            /* transition: transform 0.5s ease-in-out; */
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: 0.5s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .s1 {
+            min-width: 100%;
+            transition: 0.5s;
+        }
+
+        .s1 img {
+            /* width: 100%; */
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .s2 {
+            min-width: 100%;
+            transition: 0.5s;
+        }
+
+        .s2 img {
+            width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main view-init" data-url="/">
+            <div class="page page-home page-with-subnavbar">
+
+                <!-- tabs -->
+                <div class="tabs-animated-wrap">
+                    <div class="tabs">
+                        <!-- tabs 1 -->
+                        <div id="tab-1" class="tab tab-active page-content" style="background-color: #faf6f6;">
+                            <!-- title -->
+                            <div class="title-apps padding-middle background-primer">
+                                <div class="container">
+                                    <div class="row row-no-margin-bottom">
+
+                                        <div style="display: flex;">
+                                            <div>
+                                                <div class="float-left margin-right-small"
+                                                    onclick=window.location.href="index.html">
+
+                                                    <img class="people" src="images/mainn/arow1.png" alt="">
+
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h3 style="margin-top: 16px; color: white;">Select Insurance Operator
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end title -->
+                            <!-- profile balance -->
+
+                            <!-- end profile balance -->
+                            <!-- separator -->
+                            <div class="separator"></div>
+                            <!-- end separator -->
+                            <!-- menus -->
+                            <div class="menus">
+
+                                <div class="container">
+
+                                    <!-- 2nd ends -->
+                                    <!-- 1st starts -->
+                                    <div class="slider" id="slider1">
+                                        <div class="slides">
+                                            <div class="slide">
+                                                <img src="images/mainn/cashback1.jpeg" alt="Image 1">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/mainn/slider22.jpeg" alt="Image 2">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/mainn/cas.jpg" alt="Image 3">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/main-folder/cashback4.jpg" alt="Image 4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1st end -->
+                                    <!-- 4the stars -->
+
+                                    <!-- 4th ends -->
+                                    <!-- 5thstrats -->
+                                    <!-- <div class="row tr">
+										<div class="row third" style="background-color: blue; width: 100%;" >
+											<div style="padding: 10px;">
+												<div class="input-container">
+													<img src="images/mainn/phone (1).png" alt="Logo" class="logo-img">
+													<input type="number" id="numb" placeholder="     Sponsor Mobile No." required="" width="100%">
+												</div>
+											</div>
+										</div>
+									
+									</div> -->
+                                <div style="background-color: white; width: 86%; height: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 40px; padding: 18px; border-radius: 10px;   box-shadow: 0 -3px 13px rgba(15, 15, 15, 0.18);">
+                                   <div style="display: flex;">
+                                    <div style="margin-top: -4px;"><img src="images/mainn/search.png" alt=""></div>
+                                    <div style="font-size: 20px; margin-top: -6px; margin-left: 10px;"><input type="search" id="site-search" placeholder="Search Operator" name="q" /></div>
+                                   </div>
+                                    
+                                </div>
+                                    <div style="background-color: white; border-radius: 4px; margin-top: -20px;">
+
+                                        <div
+                                            style="background-color: #efeef1; border-radius: 4px;  padding: 10px; overflow: scroll;">
+
+                                            <div>
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Aavantika Gas Ltd</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Adani Total Gas Limited</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            APDCL RAPAR</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            APDCL-NON RAPAR</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            APEPDCL</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            APSPDCL</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Bangalore Electricity</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            BEST</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Bharatpur Electricity Services Ltd.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px;">
+                                                            Bharatpur Electricity Supply Ltd.(BKESL)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            BSES Rajdhani</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                        BSES Yumana</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Calcutta Electric Supply</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px; margin-top: -8px;">
+                                                                Central Power Distribution Corporation of A.P Ltd(APCPDCL).</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            CESU - ODISHA</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px;">
+                                                            Chamundeshwari Electricity Supply Crop Ltd</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Chandigarth Electricity Department</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                                Chhattisgarth Electricity Board</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Dakshin Gujarat Vig Company</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px;">
+                                                            Dakshin Haryana Vig Vitaran Nigam</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Dakshinanchal Vidhyut Nigam.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Daman and Diu Electricity</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px;">
+                                                            Department of Power,Nagaland</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px;">
+                                                            DNH Power Distribution Company Limited.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div style="margin-top: 14px;">
+                                                <div
+                                                    style="width: 100%; height: 58px; background-color: #fff; border-radius: 10px;   box-shadow: 0 -3px 0px rgba(15, 15, 15, 0.18);">
+                                                    <div style="display: flex;  padding: 17px;">
+                                                        <div> <img src="images/mainn/sun2.png" alt=""></div>
+                                                        <div
+                                                            style="margin-left: 10px; color: #009cb2; font-weight: bold; font-size: 16px; margin-top: -8px;">
+                                                            Gulbarga Electricity Supply Company Ltd.(GESCOM)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+                                    <!-- end tabs -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- script -->
+                        <script src="js/framework7.bundle.min.js"></script>
+                        <script src="js/routes.js"></script>
+                        <script src="js/app.js"></script>
+                        <!-- end script -->
+                        <script>
+
+                            let currentSlide = 0;
+
+                            function showSlide(index) {
+                                const slides = document.querySelector('.slides');
+                                const totalSlides = document.querySelectorAll('.card').length;
+                                const cardsToShow = 3;
+                                const totalVisibleCards = totalSlides - cardsToShow + 1;
+
+                                if (index >= totalVisibleCards) {
+                                    currentSlide = 0;
+                                } else if (index < 0) {
+                                    currentSlide = totalVisibleCards - 1;
+                                } else {
+                                    currentSlide = index;
+                                }
+
+                                const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+                                slides.style.transform = `translateX(${offset}px)`;
+                            }
+
+                            function nextSlide() {
+                                showSlide(currentSlide + 1);
+                            }
+
+                            function prevSlide() {
+                                showSlide(currentSlide - 1);
+                            }
+
+                            // Auto slide every 3 seconds
+                            setInterval(() => {
+                                nextSlide();
+                            }, 3000);
+
+                            // Initially show the first slide
+                            showSlide(currentSlide);
+                        </script>
+
+                        <script>
+                            function openNav() {
+
+
+                                document.getElementById("sidebar").style.width = "250px";
+                                document.querySelector(".content").style.marginLeft = "250px";
+
+                                const logo = document.getElementById('logo');
+                                logo.style.visibility = 'hidden';
+
+                            }
+                            function closeNav() {
+
+                                document.getElementById("sidebar").style.width = "0";
+                                document.querySelector(".content").style.marginLeft = "0";
+                                const logo = document.getElementById('logo');
+                                logo.style.visibility = 'visible';
+                            }
+                        </script>
+                        <script>
+                            function createSlider(sliderId) {
+                                let slideIndex = 0;
+                                const slider = document.getElementById(sliderId);
+                                const slides = slider.querySelectorAll('.slide');
+                                const totalSlides = slides.length;
+
+                                function showNextSlide() {
+                                    slides[slideIndex].classList.remove('active');
+                                    slideIndex = (slideIndex + 1) % totalSlides;
+                                    slides[slideIndex].classList.add('active');
+                                    slider.querySelector('.slides').style.transform = `translateX(${-slideIndex * 100}%)`;
+                                }
+
+                                setInterval(showNextSlide, 3000);
+                            }
+
+                            createSlider('slider1');
+                            createSlider('slider2');
+
+                        </script>
+                        <script>
+                            // scripts.js
+
+                            // Ensure the sidebar takes up the full height of the viewport
+                            function adjustsidebarHeight() {
+                                const sidebar = document.getElementById('sidebar');
+                                sidebar.style.height = window.innerHeight + 'px';
+                            }
+
+                            // Adjust sidebar height on window resize
+                            window.addEventListener('resize', adjustsidebarHeight);
+
+                            // Adjust sidebar height on initial load
+                            window.addEventListener('load', adjustsidebarHeight);
+
+                        </script>
+</body>
+
+</html>

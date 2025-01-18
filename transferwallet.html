@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Track expenses, transfer funds, pay bills—Check Money simplifies mobile banking, empowering you to manage finances effortlessly on-the-go.">
+	<meta name="keywords"
+		content="mobile banking, finance management, expense tracking, fund transfers, bill payments, financial empowerment, on-the-go banking, secure transactions, user-friendly interface">
+	<link rel="icon" href="images/mainn/favi.png">
+	<title> Click Money Mobile Banking</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.slider {
+			width: 100%;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			margin-bottom: 40px;
+		}
+		.slider22 {
+			width: 100%;
+			height: 240px;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			/* margin-bottom: 10px;    */
+		}
+		.slides {
+			display: flex;
+			/* transition: transform 0.5s ease-in-out; */
+		}
+		.slide {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.slide img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+		.s1 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.s1 img {
+			/* width: 100%; */
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+		.s2 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.s2 img {
+			width: 40%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div class="view view-main view-init" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+			
+				<!-- tabs -->
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab-active page-content" style="background-color: #faf6f6;">
+							<!-- title -->
+							<div class="title-apps padding-middle background-primer">
+								<div class="container">
+									<div class="row row-no-margin-bottom">
+										
+										<div style="display: flex;">
+											<div><div class="float-left margin-right-small"
+												onclick=window.location.href="index.html">
+											
+												<img class="people" src="images/mainn/arow1.png" alt="">
+											
+											</div></div>
+											<div>	<h3 style="margin-top: 16px; color: white;">Prepaid</h3></div>
+										</div>
+																				
+									</div>
+								</div>
+							</div>
+							<!-- end title -->
+							<!-- profile balance -->
+						
+							<!-- end profile balance -->
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- menus -->
+                             <div class="MAINUTILITY">
+                                <div class="main0">MAIN 
+                                    <p><span class="rsss0">रु 0</span></p>
+                                </div>
+                                <div class="utility">UTILITY 
+                                    <p><span class="resss1">रु 0</span></p>
+                                </div>
+                             </div>
+                            <!--  -->
+                       
+                               <div class="SELECT-SERVIECS">
+                                <select name="cars" id="cars">
+                                    <option value="volvo">-Select Service- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </option>
+                                    <option value="saab">Main to Utility</option>
+                                    <option value="mercedes">Utility TO Main</option>
+                            
+                                  </select>
+                                        
+                             </div>
+                             <!--  -->
+  <!--  -->
+                       
+  <div class="SELECT-SERVIECS1">
+    <span>रु 0</span>
+            
+ </div>
+ <!--  -->
+ <!--  -->
+
+ <div class="SELECT-SERVIECS2">
+    <div>रु 100+</div>
+    <div>रु 500+</div>
+    <div>रु 1000+</div>   
+ </div>
+<!--  -->
+
+							
+
+								<!-- end menus -->
+								<!-- separator -->
+								<div class="separator"></div>
+								<!-- end separator -->
+								<!-- follow us -->
+								
+								<!-- end follow us -->
+								<!-- separator -->
+								<div class="separator-bottom"></div>
+								<!-- end separator -->
+							</div>
+							<!-- end tabs 1 -->
+							<!-- tabs 2 -->
+							<div id="tab-2" class="tab page-content">
+								<div class="navbar navbar-page">
+									<div class="navbar-inner sliding">
+										<div class="title tabs-text-center">
+											History
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end tabs 2 -->
+						</div>
+					</div>
+					<!-- end tabs -->
+				</div>
+			</div>
+		</div>
+
+		<!-- script -->
+		<script src="js/framework7.bundle.min.js"></script>
+		<script src="js/routes.js"></script>
+		<script src="js/app.js"></script>
+		<!-- end script -->
+		<script>
+
+			let currentSlide = 0;
+
+			function showSlide(index) {
+				const slides = document.querySelector('.slides');
+				const totalSlides = document.querySelectorAll('.card').length;
+				const cardsToShow = 3;
+				const totalVisibleCards = totalSlides - cardsToShow + 1;
+
+				if (index >= totalVisibleCards) {
+					currentSlide = 0;
+				} else if (index < 0) {
+					currentSlide = totalVisibleCards - 1;
+				} else {
+					currentSlide = index;
+				}
+
+				const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+				slides.style.transform = `translateX(${offset}px)`;
+			}
+
+			function nextSlide() {
+				showSlide(currentSlide + 1);
+			}
+
+			function prevSlide() {
+				showSlide(currentSlide - 1);
+			}
+
+			// Auto slide every 3 seconds
+			setInterval(() => {
+				nextSlide();
+			}, 3000);
+
+			// Initially show the first slide
+			showSlide(currentSlide);
+		</script>
+
+		<script>
+			function openNav() {
+
+
+				document.getElementById("sidebar").style.width = "250px";
+				document.querySelector(".content").style.marginLeft = "250px";
+
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'hidden';
+
+			}
+			function closeNav() {
+
+				document.getElementById("sidebar").style.width = "0";
+				document.querySelector(".content").style.marginLeft = "0";
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'visible';
+			}
+		</script>
+		<script>
+			function createSlider(sliderId) {
+				let slideIndex = 0;
+				const slider = document.getElementById(sliderId);
+				const slides = slider.querySelectorAll('.slide');
+				const totalSlides = slides.length;
+
+				function showNextSlide() {
+					slides[slideIndex].classList.remove('active');
+					slideIndex = (slideIndex + 1) % totalSlides;
+					slides[slideIndex].classList.add('active');
+					slider.querySelector('.slides').style.transform = `translateX(${-slideIndex * 100}%)`;
+				}
+
+				setInterval(showNextSlide, 3000);
+			}
+
+			createSlider('slider1');
+			createSlider('slider2');
+
+		</script>
+		<script>
+			// scripts.js
+
+			// Ensure the sidebar takes up the full height of the viewport
+			function adjustsidebarHeight() {
+				const sidebar = document.getElementById('sidebar');
+				sidebar.style.height = window.innerHeight + 'px';
+			}
+
+			// Adjust sidebar height on window resize
+			window.addEventListener('resize', adjustsidebarHeight);
+
+			// Adjust sidebar height on initial load
+			window.addEventListener('load', adjustsidebarHeight);
+
+		</script>
+</body>
+
+</html>

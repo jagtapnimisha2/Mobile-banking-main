@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Track expenses, transfer funds, pay bills—Check Money simplifies mobile banking, empowering you to manage finances effortlessly on-the-go.">
+	<meta name="keywords"
+		content="mobile banking, finance management, expense tracking, fund transfers, bill payments, financial empowerment, on-the-go banking, secure transactions, user-friendly interface">
+	<link rel="icon" href="images/mainn/favi.png">
+	<title> Click Money Mobile Banking</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.slider {
+			width: 100%;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			margin-bottom: 40px;
+		}
+
+		.slider22 {
+			width: 100%;
+			height: 240px;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			/* margin-bottom: 10px;    */
+		}
+
+		.slides {
+			display: flex;
+			/* transition: transform 0.5s ease-in-out; */
+		}
+
+		.slide {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+
+		.slide img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+
+		.s1 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+
+		.s1 img {
+			/* width: 100%; */
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+
+		.s2 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+
+		.s2 img {
+			width: 40%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<div class="view view-main view-init" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom" style="position: absolute;">
+					<div class="toolbar-inner">
+						<a href="#tab-1" class="tab-link tab-link-active">
+							<i class="fas fa-history"></i>
+							<p>Meeting</p>
+						</a>
+						<a href="#tab-2" class="tab-link">
+							<i class="fa fa-home"></i>
+							<p>Store</p>
+						</a>
+						<a href="#tab-3" class="tab-link">
+							<img src="images/mainn/prime-membership1.png" alt>
+						</a>
+						<a href="/livechat/" class="tab-link">
+							<i class="fas fa-comment"></i>
+							<p>Notification</p>
+						</a>
+						<a href="#tab-5" class="tab-link">
+							<i class="fas fa-user"></i>
+							<p>Portfolio</p>
+						</a>
+					</div>
+					<div style="position: relative; margin-top: -30px;">
+						<a href="#tab-3" class="tab-link">
+							<img src="images/mainn/prime-membership1.png" alt>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- tabs -->
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab-active page-content" style="background-color: #faf6f6;">
+							<!-- title -->
+							<div class="title-apps padding-middle background-primer">
+								<div class="container">
+									<div class=" row-no-margin-bottom">
+										<div class="nnavv">
+											<div>
+												<div id="sidebar" class="sidebar" onclick="closeNav()">
+													<div class="clickClass" onclick="closeNav()">
+														<div style="display: flex;">
+															<div><img src="images/mainn/log.png" alt=""></div>
+															<div><a href="#!" class="closebtn">&times;</a></div>
+														</div>
+													</div>
+													<div class="n">
+														<div class="firt" onclick=window.location.href="index.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/home.png"
+																			width="26px alt=" home">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class=" nav-barr"> Home</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class=" firt"
+															onclick=window.location.href="edit-profile.html">
+
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/my-profiles.png" alt=""
+																			my profile>
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class=" nav-barr"> My PROFILE</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt" onclick=window.location.href="business.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/my-business.png" alt=""
+																			my business>
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">BUSINESS ZONE</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt" onclick=window.location.href="bcp.html">
+
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/voice-notifications.png"
+																			alt="" voice>
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">Voice Notification</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="refer&earn.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/earn.png" alt="earn">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">REFER & EARN</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/CUSTOMER.png" alt>
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">CUSTOMER CARE</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="changePassword.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/CHANGE-PASSWORD.png"
+																			alt="change">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">CHANGE PASSWORD</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="forgotPasswords.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/CHANGE-PASSWORD.png"
+																			alt="change passwords">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar"> CHANGE PIN</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/watch-vedio.png"
+																			alt="watch">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+
+																		<span class="nav-bar">WATCH VIDEO</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="memberRegistrations.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/updated-now.png"
+																			alt="upadtes">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+																		<span class="nav-bar">UPDATE NOW</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/privacy-policy.png"
+																			alt="privacy">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+																		<span class="nav-bar">PRIVACY POLICY</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="firt" onclick=window.location.href="login.html">
+															<div style="display: flex;">
+																<div>
+																	<a href="">
+																		<img src="images/mainn/logout.png" alt="logout">
+																	</a>
+																</div>
+																<div style="margin-left: -46px; margin-top: 10px;">
+																	<a href="">
+																		<span class="nav-bar">LOG OUT</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<!-- id="toggleButton" -->
+													<button id="toggleButton" class="openbtn" onclick="openNav()">☰
+													</button>
+												</div>
+											</div>
+											<div style="width: 100%;" id="navbar">
+												<div class="container">
+													<div class="background-white border-radius padding-box-middle box-shadow"
+														style="height: 0px;">
+														<div class="totalearn"
+															style="background-color: white; border-radius: 10px; height: 40px;">
+															<div class="side-img">
+																<img class="people" src="images/mainn/logog.png" alt>
+															</div>
+															<div>
+																<h6 class="rs">Rs.<span
+																		style="color: #293671;">57.429</span> Total Earn
+																</h6>
+															</div>
+															<div class="flag-img"><img src="images/mainn/right.png"
+																	alt="" width="20px"></div>
+															<div style="margin-top: 4px ;">
+																<img src="images/mainn/indianflags.jpg"
+																	alt="india-flags">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div style="margin-top: 10px;">
+												<!-- <div class="col"> -->
+												<a href="/notification/">
+													<span class="icon-middle margin-left-small float-right color-white">
+														<i class="fas fa-bell"></i>
+													</span>
+												</a>
+												<!-- </div>  -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end title -->
+							<!-- profile balance -->
+
+							<!-- end profile balance -->
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- menus -->
+							<div class="menus">
+								<!--  -->
+								<div class="row firstt">
+									<div class="col">
+										<a href="/withdraw/">
+											<div class=" text-center border-radius padding-box addmoney"
+												onclick=window.location.href="addmoney.html">
+												<span class="icon-big icon-color-green">
+
+													<img class="add-money" src="images/mainn/a-money.png" alt></span>
+												<h6 class="font-weight-500 texx">Add Money</h6>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a href="/transfer/">
+											<div class=" text-center border-radius padding-box addmoney"
+												onclick=window.location.href="sendmoney.html">
+												<span class="icon-big icon-color-red">
+													<img class="send-money" src="images/mainn/img2.png" alt></span>
+												<h6 class="font-weight-500 texx">Send Money </h6>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a href="/voucher/">
+											<div class=" text-center border-radius padding-box addmoney"
+												onclick=window.location.href="sendtopay.html">
+												<span class="icon-big icon-color-purple">
+													<img class="scan" src="images/mainn/scan.png" alt></span>
+												<h6 class="font-weight-500 texx">Scan & Pay</h6>
+											</div>
+										</a>
+									</div>
+									<div class="col">
+										<a href="/voucher/">
+											<div class=" text-center border-radius padding-box addmoney"
+												onclick=window.location.href="account-report.html">
+												<span class="icon-big icon-color-purple">
+													<img class="pass" src="images/mainn/money.png" alt></span>
+												<h6 class="font-weight-500 texx">Passbook</h6>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!--  -->
+								<div class="container">
+									<!-- my -->
+									<div class="row firsttt">
+										<div class="col">
+											<a href="/withdraw/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-green">
+														<p style="color: #116f78;"><b>Rs. 0</b></p>
+														<h6 class="font-weight-500 tex">Recharge Wallet</h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/transfer/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-red">
+														<p style="color: #116f78;"><b>Rs. 120.000</b></p>
+														<h6 class="font-weight-500 tex">Recharge Point </h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<p style="color: #116f78;"><b>Rs. 0</b></p>
+														<h6 class="font-weight-500 tex">Utility <br>Wallet</h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<p style="color: #116f78;"><b>Rs. 120.000</b></p>
+														<h6 class="font-weight-500 tex">Utility <br>Wallet</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!-- my -->
+									<!-- 3rd -->
+									<div class="marquee-container">
+										<div class="marquee">
+											<span>CUSTOMER CARE HELPLINE NO :-
+												9115789150</span>
+										</div>
+										<div class="marquee">
+											<span> &nbsp;&nbsp;&nbsp;CUSTOMER CARE HELPLINE NO :-
+												9115789150</span>
+										</div>
+										<div class="marquee">
+											<span> &nbsp;&nbsp;&nbsp;CUSTOMER CARE HELPLINE NO :-
+												9115789150</span>
+										</div>
+									</div>
+									<!-- 4th -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="prepaid.html">
+														<a href="">
+															<span class="icon-big icon-color-yellow">
+																<img class="pre" src="images/mainn/prapaid.png" alt>
+															</span>
+														</a>
+														<h6 class="font-weight-500">Prepaid</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="dth.html">
+														<span class="icon-big icon-color-pink">
+															<img class="DTH" src="images/mainn/aep.png" alt></span>
+														<h6 class="font-weight-500">DTH</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="postpaid.html">
+														<span class="icon-big icon-color-pink">
+															<img class="Post" src="images//mainn/post-paid.png"
+																alt></span>
+														<h6 class="font-weight-500">Postpaid</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="select-electricity.html">
+														<span class="icon-big icon-color-pink">
+															<img class="ele" src="images/mainn/electricitys.png"
+																alt></span>
+														<h6 class="font-weight-500">Electricity</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														id="myBtn">
+														<span class="icon-big icon-color-yellow">
+															<img class="aeps" src="images/mainn/aep.png" alt>
+														</span>
+														<h6 class="font-weight-500">AePS</h6>
+														<!--  -->
+														<div  id="id01">
+														<div id="myModal" class="modal" >
+
+
+														
+																<div class="modal-content">
+																	<img src="images/mainn/logo3.png" width="100px" alt="">
+																	<p style="font-weight: 400;">This Service is not active.
+																		<br>
+																		Activation one time change
+																		<br>
+																		is Rs149 only!
+																	</p>
+																	<button
+																		style="background-color: #3598dc; width: 50%; font-weight: bold; margin-bottom: 10px;">Upgrade
+																		Service</button>
+																	<br>
+																	  <span onclick="document.getElementById('id01').style.display='none'">LATER</span>
+																</div>
+															</div>
+
+														</div>
+														<!--  -->
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="selectfasttag.html">
+														<span class="icon-big icon-color-pink">
+															<img class="tag" src="images/mainn/fast-tag.png" alt></span>
+														<h6 class="font-weight-500">FASTTag</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="bookCylinder.html">
+														<span class="icon-big icon-color-pink">
+															<img class="book" src="images/mainn/booking-cylinder.png"
+																alt></span>
+														<h6 class="font-weight-500">Book A Cylinder</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="selectpiped.html">
+														<span class="icon-big icon-color-pink">
+															<img class="pip" src="images/mainn/piped-gas.png"
+																alt></span>
+														<h6 class="font-weight-500">Piped Gas</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row tr">
+											<div class="row third">
+												<div class="col">
+													<a href="/electricity/">
+														<div class=" text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="selectinsurance.html">
+															<span class="icon-big icon-color-yellow">
+																<img class="lic" src="images/mainn/lic-insurances.png"
+																	alt></span>
+															<h6 class="font-weight-500">LIC/Insurance </h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="selectboardband.html">
+															<span class="icon-big icon-color-pink">
+																<img class="broad" src="images/mainn/broad-band.png"
+																	alt></span>
+															<h6 class="font-weight-500">BroadBand </h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class="text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="googleplay.html">
+															<span class="icon-big icon-color-pink">
+																<img class="google" src="images/mainn/recharge.png"
+																	alt></span>
+															<h6 class="font-weight-500">Google Play Recharge</h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="Amazon.html">
+															<span class="icon-big icon-color-pink">
+																<img class="amazon" src="images/mainn/amazon.png"
+																	alt></span>
+															<h6 class="font-weight-500">Amazon</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 2nd starts -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="digital-gold-24.html">
+														<span class="icon-big icon-color-yellow"><img
+																src="images/mainn/digital.png" alt></span>
+														<h6 class="font-weight-500">24K Digital Gold</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/planning.png" alt></span>
+														<h6 class="font-weight-500">SIP <br> PLAN</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/scratch.png" alt></span>
+														<h6 class="font-weight-500">Scratch <br> Card</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/digital-mail.png" alt></span>
+														<h6 class="font-weight-500">Digital <br> Mail</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- 2nd ends -->
+									<!-- 1st starts -->
+									<div class="slider" id="slider1">
+										<div class="slides">
+											<div class="slide">
+												<img src="images/main-folder/cashback.jpeg" alt="Image 1">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/slider2.jpeg" alt="Image 2">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/cashback3.jpg" alt="Image 3">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/cashback4.jpg" alt="Image 4">
+											</div>
+										</div>
+									</div>
+									<!-- 1st end -->
+									<!-- 4the stars -->
+									<div class="row tr">
+										<div class="headings">
+											<div><a href> Our Affiliate Partners</a></div>
+											<div><a href>View All</a></div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img class="FAMILY" src="images/mainn/fruit.png" alt></span>
+														<h6 class="font-weight-500">A FAMILY</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="am" src="images/mainn/amazon1.png" alt></span>
+														<h6 class="font-weight-500">Amazon</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="bcp" src="images/mainn/BCP.png" alt></span>
+														<h6 class="font-weight-500">BCP TRAVEL</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="dro" src="images/mainn/DRONEVEER.png"
+																alt></span>
+														<h6 class="font-weight-500">Droneveer</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- 4th ends -->
+									<!-- 5thstrats -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="cashback.html">
+														<span class="icon-big icon-color-yellow">
+															<img class="earn" src="images/mainn/earning.png" alt></span>
+														<h6 class="font-weight-500">Earning Report</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="leaderboard.html">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/broad-band.png" alt></span>
+														<h6 class="font-weight-500">Leader <br> board</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img class="Total"
+																src="images/main-folder/total.png" alt></span>
+														<h6 class="font-weight-500">Total <br> Turnover</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="rechargehistory.html">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/recharge.png" alt></span>
+														<h6 class="font-weight-500">Recharge <br> History</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="dmt-history.html">
+														<span class="icon-big icon-color-yellow">
+															<img src="images/mainn/aep.png" alt>
+														</span>
+														<h6 class="font-weight-500">DMR <br> History</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/main-folder/payment.png" alt></span>
+														<h6 class="font-weight-500">Payment <br> Request</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="transferwallet.html">
+														<span class="icon-big icon-color-pink"><img class="Transfer"
+																src="images/main-folder//transfer.png" alt></span>
+														<h6 class="font-weight-500">Transfer <br> Wallet</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow"
+														onclick=window.location.href="reserve-wallet.html">
+														<span class="icon-big icon-color-pink"><img
+																src="images/main-folder/RESERVES.png" alt></span>
+														<h6 class="font-weight-500">Reserve <br> Wallet</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row tr">
+											<div class="row third">
+												<div class="col">
+													<a href="/electricity/">
+
+														<div class=" text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="gallery.html">
+															<span class="icon-big icon-color-yellow"><img
+																	class="gallery" src="images/main-folder/GALLERY.png"
+																	alt></span>
+															<h6 class="font-weight-500">Gallery </h6>
+														</div>
+													</a>
+												</div>
+
+												<div class="col">
+													<a href="/electricity/">
+
+														<div class=" text-center border-radius padding-box box-shadow"
+															id="openButton" onclick=window.location.href="kycform.html">
+															<span class="icon-big icon-color-yellow"><img
+																	class="galleryy" src="images/main-folder/MY-KYC.png"
+																	alt></span>
+															<h6 class="font-weight-500">My <br>Kyc </h6>
+															<!--  <div id="loader" class="loader" style="display: none;"></div> -->
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class="text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="complains.html">
+															<span class="icon-big icon-color-pink"><img class="Complain"
+																	src="images/main-folder/COMPAIN.png" alt></span>
+															<h6 class="font-weight-500">My <br>Complain</h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow"
+															onclick=window.location.href="rewards.html">
+															<span class="icon-big icon-color-pink"><img class="Reward"
+																	src="images/main-folder/REWARDS.png" alt></span>
+															<h6 class="font-weight-500">
+																Reward <br>Report</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end menus -->
+								<!-- separator -->
+								<div class="separator"></div>
+								<!-- separator -->
+								<div class="separator-bottom"></div>
+								<!-- end separator -->
+							</div>
+							<!-- end tabs 1 -->
+							<!-- tabs 2 -->
+							<div id="tab-2" class="tab page-content">
+								<div class="navbar navbar-page">
+									<div class="navbar-inner sliding">
+										<div class="title tabs-text-center">
+											History
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end tabs 2 -->
+						</div>
+					</div>
+					<!-- end tabs -->
+				</div>
+			</div>
+		</div>
+
+		<!-- script -->
+		<script src="js/framework7.bundle.min.js"></script>
+		<script src="js/routes.js"></script>
+		<script src="js/app.js"></script>
+		<!-- end script -->
+		<script>
+
+			let currentSlide = 0;
+
+			function showSlide(index) {
+				const slides = document.querySelector('.slides');
+				const totalSlides = document.querySelectorAll('.card').length;
+				const cardsToShow = 3;
+				const totalVisibleCards = totalSlides - cardsToShow + 1;
+
+				if (index >= totalVisibleCards) {
+					currentSlide = 0;
+				} else if (index < 0) {
+					currentSlide = totalVisibleCards - 1;
+				} else {
+					currentSlide = index;
+				}
+
+				const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+				slides.style.transform = `translateX(${offset}px)`;
+			}
+
+			function nextSlide() {
+				showSlide(currentSlide + 1);
+			}
+
+			function prevSlide() {
+				showSlide(currentSlide - 1);
+			}
+
+			// Auto slide every 3 seconds
+			setInterval(() => {
+				nextSlide();
+			}, 3000);
+
+			// Initially show the first slide
+			showSlide(currentSlide);
+		</script>
+
+		<script>
+			function createSlider(sliderId) {
+				let slideIndex = 0;
+				const slider = document.getElementById(sliderId);
+				const slides = slider.querySelectorAll('.slide');
+				const totalSlides = slides.length;
+
+				function showNextSlide() {
+					slides[slideIndex].classList.remove('active');
+					slideIndex = (slideIndex + 1) % totalSlides;
+					slides[slideIndex].classList.add('active');
+					slider.querySelector('.slides').style.transform = `translateX(${-slideIndex * 100}%)`;
+				}
+
+				setInterval(showNextSlide, 3000);
+			}
+
+			createSlider('slider1');
+			createSlider('slider2');
+
+		</script>
+
+		<script>
+			// scripts.js
+
+			// Ensure the sidebar takes up the full height of the viewport
+			function adjustsidebarHeight() {
+				const sidebar = document.getElementById('sidebar');
+				sidebar.style.height = window.innerHeight + 'px';
+			}
+
+			// Adjust sidebar height on window resize
+			window.addEventListener('resize', adjustsidebarHeight);
+
+			// Adjust sidebar height on initial load
+			window.addEventListener('load', adjustsidebarHeight);
+
+		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function () {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+
+		<!-- loader -->
+		<script>
+			document.getElementById('openButton').addEventListener('click', function () {
+				var loader = document.getElementById('loader');
+				loader.style.display = 'block';
+
+				// Simulate a delay to show the loader
+				setTimeout(function () {
+					window.location.href = 'kycform.html'; // Replace with the URL of the page you want to open
+				}, 2000); // 2 seconds delay
+			});
+
+		</script>
+
+	
+		<!-- sidenamvar -->
+		<script>
+			function openNav() {
+
+
+				document.getElementById("sidebar").style.width = "250px";
+				document.querySelector(".content").style.marginLeft = "250px";
+
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'hidden';
+
+			}
+			function closeNav() {
+
+				document.getElementById("sidebar").style.width = "0";
+				document.querySelector(".content").style.marginLeft = "0";
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'visible';
+			}
+		</script>
+		<!-- sidenavbar end -->
+		 	<!-- new navbar hide code -->
+
+		<script>
+			document.getElementById('toggleButton').addEventListener('click', function () {
+				var navbar = document.getElementById('navbar');
+				if (navbar.classList.contains('hidden')) {
+					navbar.classList.remove('hidden');
+				} else {
+					navbar.classList.add('hidden');
+				}
+			});
+		</script>
+	<!-- new navbar hide codes-->
+
+</body>
+
+</html>

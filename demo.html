@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Track expenses, transfer funds, pay bills—Check Money simplifies mobile banking, empowering you to manage finances effortlessly on-the-go.">
+	<meta name="keywords"
+		content="mobile banking, finance management, expense tracking, fund transfers, bill payments, financial empowerment, on-the-go banking, secure transactions, user-friendly interface">
+	<link rel="icon" href="images/mainn/favi.png">
+	<title> Click Money Mobile Banking</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.slider {
+			width: 100%;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			margin-bottom: 40px;
+		}
+		.slider22 {
+			width: 100%;
+			height: 240px;
+			max-width: 800px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			position: relative;
+			/* margin-bottom: 10px;    */
+		}
+		.slides {
+			display: flex;
+			/* transition: transform 0.5s ease-in-out; */
+		}
+		.slide {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.slide img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+		.s1 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.s1 img {
+			/* width: 100%; */
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+		.s2 {
+			min-width: 100%;
+			transition: 0.5s;
+		}
+		.s2 img {
+			width: 40%;
+			height: auto;
+			display: block;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div class="view view-main view-init" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+					<div class="toolbar-inner">
+						<a href="#tab-1" class="tab-link tab-link-active">
+							<i class="fas fa-history"></i>
+							<p>Meeting</p>
+						</a>
+						<a href="#tab-2" class="tab-link">
+							<i class="fa fa-home"></i>
+							<p>Store</p>
+						</a>
+						<a href="#tab-3" class="tab-link">
+							<img src="images/mainn/prime-memberships.png" alt>
+						</a>
+						<a href="/livechat/" class="tab-link">
+							<i class="fas fa-comment"></i>
+							<p>Notification</p>
+						</a>
+						<a href="#tab-5" class="tab-link">
+							<i class="fas fa-user"></i>
+							<p>Portfolio</p>
+						</a>
+					</div>
+				</div>
+				<!-- tabs -->
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab-active page-content" style="background-color: #faf6f6;">
+							<!-- title -->
+							<div class="title-apps padding-middle background-primer">
+								<div class="container">
+									<div class=" row-no-margin-bottom">
+										<div class="nnavv">
+											<div>
+												<div id="sidebar" class="sidebar" onclick="closeNav()">
+													<div class="clickClass" onclick="closeNav()">
+														<a href="#!" class="closebtn">&times;</a>
+													</div>
+													<div class="n">
+														<div class="firt" onclick=window.location.href="index.html">
+															<a href="">
+																<img src="images/mainn/home.png" width="26px alt="
+																	home">
+																<span class=" nav-barr"> Home</span>
+															</a>
+														</div>
+														<div class=" firt"
+															onclick=window.location.href="edit-profile.html">
+															<a href="#services">
+																<img src="images/mainn/my-profiles.png" alt="" my
+																	profile>
+																<span class="nav-barrr"> My PROFILE</span>
+															</a>
+														</div>
+														<div class="firt" onclick=window.location.href="business.html">
+															<a href="#clients">
+																<img src="images/mainn/my-business.png" alt="" my
+																	business>
+																<span class="nav-bar">BUSINESS ZONE</span>
+															</a>
+														</div>
+														<div class="firt" onclick=window.location.href="bcp.html">
+															<a href="#contact"><img
+																	src="images/mainn/voice-notifications.png" alt=""
+																	voice>
+																<span class="nav-bar">Voice Notification</span>
+															</a>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="refer&earn.html">
+															<a href="#home">
+																<img src="images/mainn/earn.png" alt="earn">
+																<span class="nav-bar">REFER & EARN</span>
+															</a>
+														</div>
+														<div class="firt">
+															<a href="#services"><img src="images/mainn/CUSTOMER.png"
+																	alt>
+																<span class="nav-bar">CUSTOMER CARE</span>
+															</a>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="changePassword.html">
+															<a href="#clients">
+																<img src="images/mainn/CHANGE-PASSWORD.png"
+																	alt="change">
+																<span class="nav-bar">CHANGE PASSWORD</span>
+															</a>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="forgotPasswords.html">
+															<a href="#contact">
+																<img src="images/mainn/CHANGE-PASSWORD.png" alt=""
+																	change passwords>
+																<span class="nav-bar"> CHANGE PIN</span>
+															</a>
+														</div>
+														<div class="firt">
+															<a href="#services">
+																<img src="images/mainn/watch-vedio.png" alt="watch">
+																<span class="nav-bar">WATCH VIDEO</span>
+															</a>
+														</div>
+														<div class="firt"
+															onclick=window.location.href="memberRegistrations.html">
+															<a href="#clients">
+																<img src="images/mainn/updated-now.png" alt="upadtes">
+																<span class="nav-bar">UPDATE NOW</span>
+															</a>
+														</div>
+														<div class="firt">
+															<a href="#contact">
+																<img src="images/mainn/privacy-policy.png"
+																	alt="privacy">
+																<span class="nav-bar">PRIVACY POLICY</span>
+															</a>
+														</div>
+														<div class="firt" onclick=window.location.href="login.html">
+															<a href="#contact">
+																<img src="images/mainn/logout.png" alt="logout">
+																<span class="nav-bar">LOG OUT</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<!-- id="toggleButton" -->
+													<button class="openbtn" onclick="openNav()">☰ </button>
+												</div>
+											</div>
+											<div style="margin-top: 10px;">
+												<img src="images/mainn/log.png" alt="Logo" id="logo">
+											</div>
+											<div style="margin-top: 10px;">
+												<!-- <div class="col"> -->
+												<a href="/notification/">
+													<span class="icon-middle margin-left-small float-right color-white">
+														<i class="fas fa-bell"></i>
+													</span>
+												</a>
+												<!-- </div>  -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end title -->
+							<!-- profile balance -->
+							<div class="border-radius-style background-circle background-primer">
+								<div class="container">
+									<div class="background-white border-radius padding-box-middle box-shadow">
+										<div class="totalearn">
+											<div class="side-img"><img class="people" src="images/mainn/logo.png" alt>
+											</div>
+											<div>
+												<h6 class="rs">Rs.<span style="color: #293671;">57.429</span> Total Earn
+												</h6>
+											</div>
+											<div class="flag-img"><img src="images/mainn/right.png" alt=""></div>
+											<div style="margin-top: 4px ;"><img src="images/mainn/indian-flags (2).jpg"
+													alt="india-flags"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end profile balance -->
+							<!-- separator -->
+							<div class="separator"></div>
+							<!-- end separator -->
+							<!-- menus -->
+							<div class="menus">
+								<div class="container">
+									<!--  -->
+									<div class="row firstt">
+										<div class="col">
+											<a href="/withdraw/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-green">
+
+														<img class="add-money" src="images/mainn/a-money.png"
+															alt></span>
+													<h6 class="font-weight-500 texx">Add Money</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="/transfer/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-red">
+														<img class="send-money" src="images/mainn/img2.png" alt></span>
+													<h6 class="font-weight-500 texx">Send Money </h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<img class="scan" src="images/mainn/scan.png" alt></span>
+													<h6 class="font-weight-500 texx">Scan & Pay</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<img class="pass" src="images/mainn/money.png" alt></span>
+													<h6 class="font-weight-500 texx">Passbook</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!--  -->
+									<!-- my -->
+									<div class="row firsttt">
+										<div class="col">
+											<a href="/withdraw/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-green">
+														<p style="color: #116f78;"><b>Rs. 0</b></p>
+														<h6 class="font-weight-500 tex">Recharge Wallet</h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/transfer/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-red">
+														<p style="color: #116f78;"><b>Rs. 120.000</b></p>
+														<h6 class="font-weight-500 tex">Recharge Point </h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<p style="color: #116f78;"><b>Rs. 0</b></p>
+														<h6 class="font-weight-500 tex">Utility <br>Wallet</h6>
+												</div>
+											</a>
+										</div>
+										<p class="vl"></p>
+										<div class="col">
+											<a href="/voucher/">
+												<div class=" text-center border-radius padding-box addmoney">
+													<span class="icon-big icon-color-purple">
+														<p style="color: #116f78;"><b>Rs. 120.000</b></p>
+														<h6 class="font-weight-500 tex">Utility <br>Wallet</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!-- my -->
+									<!-- 3rd -->
+									<div class="row third-first">
+										<div class="col">
+											<a href="/withdraw/">
+												<div class=" text-center border-radius padding-box"
+													style="font-size: 17px;">
+													<h6 class="font-weight-500 t-color">CUSTOMER CARE HELPLINE NO :-
+														9115789150 </h6>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!-- 3rd ends -->
+									<!-- 4th -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img class="pre" src="images/mainn/prapaid.png" alt>
+														</span>
+														<h6 class="font-weight-500">Prepaid</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="DTH" src="images/mainn/aep.png" alt></span>
+														<h6 class="font-weight-500">DTH</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="Post" src="images//mainn/post-paid.png"
+																alt></span>
+														<h6 class="font-weight-500">Postpaid</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="ele" src="images/mainn/electricitys.png"
+																alt></span>
+														<h6 class="font-weight-500">Electricity</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img class="aeps" src="images/mainn/aep.png" alt>
+														</span>
+														<h6 class="font-weight-500">AePS</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="tag" src="images/mainn/fast-tag.png" alt></span>
+														<h6 class="font-weight-500">FAST <br> Tag</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="book" src="images/mainn/booking-cylinder.png"
+																alt></span>
+														<h6 class="font-weight-500">Book A Cylinder</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="pip" src="images/mainn/piped-gas.png"
+																alt></span>
+														<h6 class="font-weight-500">Piped <br> Gas</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row tr">
+											<div class="row third">
+												<div class="col">
+													<a href="/electricity/">
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-yellow">
+																<img class="lic" src="images/mainn/lic-insurances.png"
+																	alt></span>
+															<h6 class="font-weight-500">LIC/Insurance </h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-pink">
+																<img class="broad" src="images/mainn/broad-band.png"
+																	alt></span>
+															<h6 class="font-weight-500">BroadBand </h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class="text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-pink">
+																<img class="google" src="images/mainn/recharge.png"
+																	alt></span>
+															<h6 class="font-weight-500">Google Play Recharge</h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-pink">
+																<img class="amazon" src="images/mainn/amazon.png"
+																	alt></span>
+															<h6 class="font-weight-500">Amazon</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 2nd starts -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow"><img
+																src="images/mainn/digital.png" alt></span>
+														<h6 class="font-weight-500">24K Digital Gold</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/planning.png" alt></span>
+														<h6 class="font-weight-500">SIP <br> PLAN</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/scratch.png" alt></span>
+														<h6 class="font-weight-500">Scratch <br> Card</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/digital-mail.png" alt></span>
+														<h6 class="font-weight-500">Digital <br> Mail</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- 2nd ends -->
+									<!-- 1st starts -->
+									<div class="slider" id="slider1">
+										<div class="slides">
+											<div class="slide">
+												<img src="images/main-folder/cashback.jpeg" alt="Image 1">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/slider2.jpeg" alt="Image 2">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/cashback3.jpg" alt="Image 3">
+											</div>
+											<div class="slide">
+												<img src="images/main-folder/cashback4.jpg" alt="Image 4">
+											</div>
+										</div>
+									</div>
+									<!-- 1st end -->
+									<!-- 4the stars -->
+									<div class="row tr">
+										<div class="headings">
+											<div><a href> Our Affiliate Partners</a></div>
+											<div><a href>View All</a></div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img class="FAMILY" src="images/mainn/fruit.png" alt></span>
+														<h6 class="font-weight-500">A FAMILY</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="am" src="images/mainn/amazon1.png" alt></span>
+														<h6 class="font-weight-500">Amazon</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="bcp" src="images/mainn/BCP.png" alt></span>
+														<h6 class="font-weight-500">BCP TRAVEL</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink">
+															<img class="dro" src="images/mainn/DRONEVEER.png"
+																alt></span>
+														<h6 class="font-weight-500">Droneveer</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- 4th ends -->
+									<!-- 5thstrats -->
+									<div class="row tr">
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img class="earn" src="images/mainn/earning.png" alt></span>
+														<h6 class="font-weight-500">Earning Report</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/broad-band.png" alt></span>
+														<h6 class="font-weight-500">Leader <br> board</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img class="Total"
+																src="images/main-folder/total.png" alt></span>
+														<h6 class="font-weight-500">Total <br> Turnover</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/mainn/recharge.png" alt></span>
+														<h6 class="font-weight-500">Recharge <br> History</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row third">
+											<div class="col">
+												<a href="/electricity/">
+
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-yellow">
+															<img src="images/mainn/aep.png" alt>
+														</span>
+														<h6 class="font-weight-500">DMR <br> History</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/main-folder/payment.png" alt></span>
+														<h6 class="font-weight-500">Payment <br> Request</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img class="Transfer"
+																src="images/main-folder//transfer.png" alt></span>
+														<h6 class="font-weight-500">Transfer <br> Wallet</h6>
+													</div>
+												</a>
+											</div>
+											<div class="col">
+												<a href="/donation/">
+													<div class=" text-center border-radius padding-box box-shadow">
+														<span class="icon-big icon-color-pink"><img
+																src="images/main-folder/RESERVES.png" alt></span>
+														<h6 class="font-weight-500">Reserve <br> Wallet</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row tr">
+											<div class="row third">
+
+												<div class="col">
+													<a href="/electricity/">
+
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-yellow"><img
+																	class="gallery" src="images/main-folder/GALLERY.png"
+																	alt></span>
+															<h6 class="font-weight-500">Gallery </h6>
+														</div>
+													</a>
+												</div>
+
+												<div class="col">
+													<a href="/electricity/">
+
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-yellow"><img
+																	class="galleryy" src="images/main-folder/MY-KYC.png"
+																	alt></span>
+															<h6 class="font-weight-500">My <br>Kyc </h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class="text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-pink"><img class="Complain"
+																	src="images/main-folder/COMPAIN.png" alt></span>
+															<h6 class="font-weight-500">My <br>Complain</h6>
+														</div>
+													</a>
+												</div>
+												<div class="col">
+													<a href="/donation/">
+														<div class=" text-center border-radius padding-box box-shadow">
+															<span class="icon-big icon-color-pink"><img class="Reward"
+																	src="images/main-folder/REWARDS.png" alt></span>
+															<h6 class="font-weight-500">
+																Reward <br>Report</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- 5th ends -->
+									<!-- card slder styars -->
+									<div class="row tr">
+										<div class="headings">
+											<div><a href>Latest Recipient</a></div>
+											<div><a href>View All</a></div>
+										</div>
+										<div class="row first">
+
+											<div class="slider22" id="slider2">
+												<div class="slides">
+													<div class="slide">
+														<img src="images/main-folder/shopings.jpg" alt="Image 5">
+													</div>
+													<div class="slide">
+														<img src="images/main-folder/img22.jpg" alt="Image 6">
+													</div>
+													<div class="slide">
+														<img src="images/main-folder/images3.jpeg" alt="Image 7">
+													</div>
+													<div class="slide">
+														<img src="images/main-folder/img4.jpg" alt="Image 8">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end menus -->
+								<!-- separator -->
+								<div class="separator"></div>
+								<!-- end separator -->
+								<!-- follow us -->
+								<div class="container">
+									<div
+										class="background-white border-radius box-shadow padding-box-middle text-center">
+										<h4 class="margin-bottom-small">Follow us on :</h4>
+										<ul>
+											<li>
+												<a href><span
+														class="icon-small icon-width socmed-bg-facebook color-white">
+														<i class="fab fa-facebook-f"></i>
+													</span></a>
+											</li>
+											<li>
+												<a href><span
+														class="icon-small icon-width socmed-bg-twitter color-white">
+														<i class="fab fa-twitter"></i>
+													</span></a>
+											</li>
+											<li>
+												<a href><span
+														class="icon-small icon-width socmed-bg-whatsapp color-white">
+														<i class="fab fa-whatsapp"></i>
+													</span></a>
+											</li>
+											<li>
+												<a href><span
+														class="icon-small icon-width socmed-bg-google color-white">
+														<i class="fab fa-google"></i>
+													</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- end follow us -->
+								<!-- separator -->
+								<div class="separator-bottom"></div>
+								<!-- end separator -->
+							</div>
+							<!-- end tabs 1 -->
+							<!-- tabs 2 -->
+							<div id="tab-2" class="tab page-content">
+								<div class="navbar navbar-page">
+									<div class="navbar-inner sliding">
+										<div class="title tabs-text-center">
+											History
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end tabs 2 -->
+						</div>
+					</div>
+					<!-- end tabs -->
+				</div>
+			</div>
+		</div>
+
+		<!-- script -->
+		<script src="js/framework7.bundle.min.js"></script>
+		<script src="js/routes.js"></script>
+		<script src="js/app.js"></script>
+		<!-- end script -->
+		<script>
+
+			let currentSlide = 0;
+
+			function showSlide(index) {
+				const slides = document.querySelector('.slides');
+				const totalSlides = document.querySelectorAll('.card').length;
+				const cardsToShow = 3;
+				const totalVisibleCards = totalSlides - cardsToShow + 1;
+
+				if (index >= totalVisibleCards) {
+					currentSlide = 0;
+				} else if (index < 0) {
+					currentSlide = totalVisibleCards - 1;
+				} else {
+					currentSlide = index;
+				}
+
+				const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+				slides.style.transform = `translateX(${offset}px)`;
+			}
+
+			function nextSlide() {
+				showSlide(currentSlide + 1);
+			}
+
+			function prevSlide() {
+				showSlide(currentSlide - 1);
+			}
+
+			// Auto slide every 3 seconds
+			setInterval(() => {
+				nextSlide();
+			}, 3000);
+
+			// Initially show the first slide
+			showSlide(currentSlide);
+		</script>
+
+		<script>
+			function openNav() {
+
+
+				document.getElementById("sidebar").style.width = "250px";
+				document.querySelector(".content").style.marginLeft = "250px";
+
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'hidden';
+
+			}
+			function closeNav() {
+
+				document.getElementById("sidebar").style.width = "0";
+				document.querySelector(".content").style.marginLeft = "0";
+				const logo = document.getElementById('logo');
+				logo.style.visibility = 'visible';
+			}
+		</script>
+		<script>
+			function createSlider(sliderId) {
+				let slideIndex = 0;
+				const slider = document.getElementById(sliderId);
+				const slides = slider.querySelectorAll('.slide');
+				const totalSlides = slides.length;
+
+				function showNextSlide() {
+					slides[slideIndex].classList.remove('active');
+					slideIndex = (slideIndex + 1) % totalSlides;
+					slides[slideIndex].classList.add('active');
+					slider.querySelector('.slides').style.transform = `translateX(${-slideIndex * 100}%)`;
+				}
+
+				setInterval(showNextSlide, 3000);
+			}
+
+			createSlider('slider1');
+			createSlider('slider2');
+
+		</script>
+		<script>
+			// scripts.js
+
+			// Ensure the sidebar takes up the full height of the viewport
+			function adjustsidebarHeight() {
+				const sidebar = document.getElementById('sidebar');
+				sidebar.style.height = window.innerHeight + 'px';
+			}
+
+			// Adjust sidebar height on window resize
+			window.addEventListener('resize', adjustsidebarHeight);
+
+			// Adjust sidebar height on initial load
+			window.addEventListener('load', adjustsidebarHeight);
+
+		</script>
+</body>
+
+</html>

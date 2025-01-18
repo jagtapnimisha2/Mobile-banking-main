@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Change passwords securely with Check Money, ensuring protection for your mobile banking account with simple, user-friendly steps and robust security.">
+	<meta name="keywords"
+		content="change password, mobile banking security, password management, secure account access, account security, password reset, user authentication, mobile finance app">
+	<title>Click Money Mobile Banking</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="app">
+		<div class="view view-main view-init" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom" style="background-color: #0090ab;">
+					<p class="dounload">REFER NOW</p>
+				</div>
+				<!-- tabs -->
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab tab4 tab-active page-content">
+							<!-- title -->
+							<div style="background-color: #006172; width: 100%; height: 190px; margin-top: -20px;">
+								<!-- profile balance -->
+								<!-- <div class="border-radius-style background-circle background-primer">
+									<div class="container">
+										<div class="background-white border-radius padding-box-middle box-shadow">
+											<div class="row row-no-margin-bottom">
+												<div class="col-60">
+													<div class="float-left margin-right-small"
+														onclick=window.location.href="index.html">
+														<img class="people" src="images/mainn/newarrow.png" alt="">
+													</div>
+													<div class="overflow-hidden">
+														<h6 style="margin-top: 15px;">Refer & Earn</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+								<div style="box-shadow: 2px 2px 2px 0px rgb(87, 87, 87);">
+								<div style="display: flex; margin-top: 16px; margin-left: 10px; ">
+									<div><div class="float-left margin-right-small"
+										onclick=window.location.href="index.html">
+									
+										<img class="people" src="images/mainn/arow1.png" alt="">
+									
+									</div></div>
+									<div>	<h3 style="margin-top: 16px; color: white;">	Refer & Earn</h3></div>
+								</div>
+								</div>
+								<!-- end profile balance -->
+								<div style="justify-content: center; align-items: center; text-align: center;">
+									<img src="images/mainn/refund2.png" alt="">
+									<div
+										style="width: 80%; height: 36px; background-color: #fff; margin-top: -40px; margin-left: 36px; border-radius: 8px;    border: 2px dashed #0595a8;">
+										<p class="frgaws" style="margin-top: 6px; color: rgb(121, 118, 118);"><b>Refund
+												And Earn BCP India</b></p>
+									</div>
+								</div>
+								<div class="referpara">
+									<p>
+										Refer Your friend to join BCP India Via <br> Whatsapp,SMS,Email etc.
+									</p>
+								</div>
+							</div>
+							<!-- separator -->
+							<div class="nextrefer">
+								<hr class="new1">
+								<h2 style="margin-top: 16px;">How Does it Work?</h2>
+								<div style="display: flex; margin-top: 16px;">
+									<div class="fsttt"><img src="images/mainn/fast-tag.png" alt="">
+									</div>
+									<div class="invite">Invite Your friend to register on BCP India
+									</div>
+								</div>
+								<div style="display: flex; margin-top: 16px;">
+									<div class="fstttt"><img src="images/main-folder/website.png" alt="">
+									</div>
+									<div class="invite">When friend register on App, bothof will get 20 points
+									</div>
+								</div>
+								<div style="display: flex; margin-top: 16px;">
+									<div class="fsttttt"><img src="images/main-folder/recharge.png" alt="">
+									</div>
+									<div class="invite">You can be used on any kind of recharge and bill payment
+									</div>
+								</div>
+							</div>
+							<!-- end separator -->
+							<script src="js/framework7.bundle.min.js"></script>
+							<script src="js/routes.js"></script>
+							<script src="js/app.js"></script>
+							<!-- end script -->
+							<script>
+								let currentSlide = 0;
+								function showSlide(index) {
+									const slides = document.querySelector('.slides');
+									const totalSlides = document.querySelectorAll('.card').length;
+									const cardsToShow = 3;
+									const totalVisibleCards = totalSlides - cardsToShow + 1;
+									if (index >= totalVisibleCards) {
+										currentSlide = 0;
+									} else if (index < 0) {
+										currentSlide = totalVisibleCards - 1;
+									} else {
+										currentSlide = index;
+									}
+									const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+									slides.style.transform = `translateX(${offset}px)`;
+								}
+								function nextSlide() {
+									showSlide(currentSlide + 1); separator
+								}
+								function prevSlide() {
+									showSlide(currentSlide - 1);
+								}
+								// Auto slide every 3 seconds
+								setInterval(() => {
+									nextSlide();
+								}, 3000);
+								// Initially show the first slide
+								showSlide(currentSlide);
+							</script>
+</body>
+</html>

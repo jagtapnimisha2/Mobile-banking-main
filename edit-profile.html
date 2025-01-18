@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Update your profile details easily with Check Money, ensuring accuracy and personalization for seamless mobile banking experiences.">
+	<meta name="keywords"
+		content="edit profile, mobile banking app, personal details, update information, account customization, user preferences, profile management, mobile finance">
+
+	<title>Click Money Mobile Banking</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div id="app">
+		<div class="view view-main view-init" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+					<div class="toolbar-inner">
+						<a href="#tab-1" class="tab-link tab-link-active">
+							<i class="fas fa-history"></i>
+							<p>Meeting</p>
+						</a>
+						<a href="#tab-2" class="tab-link">
+
+							<i class="fa fa-home"></i>
+
+							<p>Store</p>
+						</a>
+						<a href="#tab-3" class="tab-link">
+							<img src="images/mainn/prime-memberships.png" alt="">
+						</a>
+						<a href="/livechat/" class="tab-link">
+							<i class="fas fa-comment"></i>
+							<p>Notification</p>
+						</a>
+						<a href="#tab-5" class="tab-link">
+							<i class="fas fa-user"></i>
+							<p>Portfolio</p>
+						</a>
+						<span class="tab-link-highlight"
+							style="width: 20%; transform: translate3d(0%, 0px, 0px);"></span>
+					</div>
+				</div>
+
+				<!-- tabs -->
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+						<!-- tabs 1 -->
+						<div id="tab-1" class="tab  tabb tab-active page-content">
+							<!-- title -->
+							<!-- profile balance -->
+							<div class="border-radius-style background-circle background-primer">
+								<div class="container">
+									<div class="background-white border-radius padding-box-middle box-shadow">
+										<div style="display: flex;" onclick=window.location.href="index.html">
+											<div> <img class="people" src="images/mainn/left1111.png" alt="">
+											</div>
+											<div>
+												<h6 class="edit-profile">Edit Profile</h6>
+											</div>
+											<div class="save">Save</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end profile balance -->
+							<!-- separator -->
+							<div>
+								<div class="form-container" style="margin-top: 60px; ">
+									<form action="/submit" method="post">
+										<div class="headings">
+											<div><a href=""></a></div>
+											<div class="img-edit">
+												<img class="people" src="images/main-folder/user-icon-design-vector.jpg"
+													alt="">
+											</div>
+											<div><a href=""></a></div>
+										</div>
+										<div class="input-container big-main">
+											<p>
+											<div class="radio-container small-main">
+												<b>PIN:</b><label for="option1">
+													<input type="radio" id="option1" name="options" value="1"><b>ON</b>
+												</label>
+												<label for="option2">
+													<input type="radio" id="option2" name="options" value="2">
+													<b>OFF</b>
+												</label>
+											</div>
+											</p>
+										</div>
+										<br>
+										<div class="input-container">
+											<img src="images/mainn/security-code.png" alt="Logo" class="logo-img">
+											<input type="number" id="input-with-logo" placeholder="     Security PIN"
+												required>
+										</div>
+
+										<div class="input-container">
+											<img src="images/mainn/google-contacts.png" alt="Logo" class="logo-img">
+											<input type="text" id="input-with-logo" placeholder="     Sandeep" required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/google-contacts.png" alt="Logo" class="logo-img">
+											<input type="number" id="numbb" name="number" placeholder="     BCP34580"
+												required>
+										</div>
+
+										<div class="input-container">
+											<img src="images/mainn/phone (1).png" alt="Logo" class="logo-img">
+											<input type="number" id="numb" placeholder="     9262312634" required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/mail.png" alt="Logo" class="logo-img">
+											<input type="text" id="texttt" placeholder="     Sandeep70916@gmail.com"
+												required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/google-contacts.png" alt="Logo" class="logo-img">
+											<input type="text" id="textt" name="number" placeholder="     Company Name"
+												required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/locations.png" alt="Logo" class="logo-img">
+											<input type="text" id="input-with-logo" placeholder="     guthani" required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/locations.png" alt="Logo" class="logo-img">
+											<input type="number" id="number" name="number" placeholder="     841239"
+												required>
+										</div>
+										<div class="input-container">
+											<img src="images/mainn/locations.png" alt="Logo" class="logo-img">
+											<input type="text" id="text" name="text" placeholder="     koharwaliya"
+												required>
+										</div>
+
+
+										<div class="input-group">
+											<button type="submit">Sign Up</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- end separator -->
+
+							<script src="js/framework7.bundle.min.js"></script>
+							<script src="js/routes.js"></script>
+							<script src="js/app.js"></script>
+							<!-- end script -->
+							<script>
+
+								let currentSlide = 0;
+
+								function showSlide(index) {
+									const slides = document.querySelector('.slides');
+									const totalSlides = document.querySelectorAll('.card').length;
+									const cardsToShow = 3;
+									const totalVisibleCards = totalSlides - cardsToShow + 1;
+
+									if (index >= totalVisibleCards) {
+										currentSlide = 0;
+									} else if (index < 0) {
+										currentSlide = totalVisibleCards - 1;
+									} else {
+										currentSlide = index;
+									}
+
+									const offset = -currentSlide * (300 + 20); // 300px width + 20px margin
+									slides.style.transform = `translateX(${offset}px)`;
+								}
+
+								function nextSlide() {
+									showSlide(currentSlide + 1); separator
+								}
+
+								function prevSlide() {
+									showSlide(currentSlide - 1);
+								}
+
+								// Auto slide every 3 seconds
+								setInterval(() => {
+									nextSlide();
+								}, 3000);
+
+								// Initially show the first slide
+								showSlide(currentSlide);
+							</script>
+</body>
+
+</html>
